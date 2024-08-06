@@ -13,6 +13,9 @@ const theme = createTheme({
 	typography: {
 		fontFamily: vazir.style.fontFamily,
 	},
+	palette: {
+		background: {default: "#F7F9F2"},
+	}
 });
 
 export default theme;
