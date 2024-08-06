@@ -6,7 +6,7 @@ const Home = () => {
 			<Slider />
 			<ProductList
 				variant="offer"
-				items={[{}]}
+				items={[]}
 			/>
 		</>
 	);
