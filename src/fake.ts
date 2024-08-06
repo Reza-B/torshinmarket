@@ -11,7 +11,7 @@ export const colors: TColor[] = [
 export const products: TProductItem[] = [
 	{
 		id: 1,
-		imgUrl: "https://example.com/image1.jpg",
+		imgUrl: "https://picsum.photos/id/1/200/300",
 		name: "محصول ۱",
 		title: "عنوان محصول ۱",
 		category: 2,
@@ -25,7 +25,7 @@ export const products: TProductItem[] = [
 	},
 	{
 		id: 2,
-		imgUrl: "https://example.com/image2.jpg",
+		imgUrl: "https://picsum.photos/id/2/200/300",
 		name: "محصول ۲",
 		title: "عنوان محصول ۲",
 		category: 3,
@@ -39,7 +39,7 @@ export const products: TProductItem[] = [
 	},
 	{
 		id: 3,
-		imgUrl: "https://example.com/image3.jpg",
+		imgUrl: "https://picsum.photos/id/13/200/300",
 		name: "محصول ۳",
 		title: "عنوان محصول ۳",
 		category: 2,
@@ -53,7 +53,7 @@ export const products: TProductItem[] = [
 	},
 	{
 		id: 4,
-		imgUrl: "https://example.com/image4.jpg",
+		imgUrl: "https://picsum.photos/id/32/200/300",
 		name: "محصول ۴",
 		title: "عنوان محصول ۴",
 		category: 1,
@@ -67,7 +67,7 @@ export const products: TProductItem[] = [
 	},
 	{
 		id: 5,
-		imgUrl: "https://example.com/image5.jpg",
+		imgUrl: "https://picsum.photos/id/24/200/300",
 		name: "محصول ۵",
 		title: "عنوان محصول ۵",
 		category: 1,
@@ -81,7 +81,7 @@ export const products: TProductItem[] = [
 	},
 	{
 		id: 6,
-		imgUrl: "https://example.com/image6.jpg",
+		imgUrl: "https://picsum.photos/id/25/200/300",
 		name: "محصول ۶",
 		title: "عنوان محصول ۶",
 		category: 1,
@@ -95,7 +95,7 @@ export const products: TProductItem[] = [
 	},
 	{
 		id: 7,
-		imgUrl: "https://example.com/image7.jpg",
+		imgUrl: "https://picsum.photos/id/26/200/300",
 		name: "محصول ۷",
 		title: "عنوان محصول ۷",
 		category: 1,
@@ -109,7 +109,7 @@ export const products: TProductItem[] = [
 	},
 	{
 		id: 8,
-		imgUrl: "https://example.com/image8.jpg",
+		imgUrl: "https://picsum.photos/id/27/200/300",
 		name: "محصول ۸",
 		title: "عنوان محصول ۸",
 		category: 1,
@@ -123,7 +123,7 @@ export const products: TProductItem[] = [
 	},
 	{
 		id: 9,
-		imgUrl: "https://example.com/image9.jpg",
+		imgUrl: "https://picsum.photos/id/28/200/300",
 		name: "محصول ۹",
 		title: "عنوان محصول ۹",
 		category: 2,
@@ -137,7 +137,7 @@ export const products: TProductItem[] = [
 	},
 	{
 		id: 10,
-		imgUrl: "https://example.com/image10.jpg",
+		imgUrl: "https://picsum.photos/id/26/200/300",
 		name: "محصول ۱۰",
 		title: "عنوان محصول ۱۰",
 		category: 4,
@@ -151,7 +151,7 @@ export const products: TProductItem[] = [
 	},
 	{
 		id: 11,
-		imgUrl: "https://example.com/image11.jpg",
+		imgUrl: "https://picsum.photos/id/29/200/300",
 		name: "محصول ۱۱",
 		title: "عنوان محصول ۱۱",
 		category: 3,
@@ -165,7 +165,7 @@ export const products: TProductItem[] = [
 	},
 	{
 		id: 12,
-		imgUrl: "https://example.com/image12.jpg",
+		imgUrl: "https://picsum.photos/id/24/200/300",
 		name: "محصول ۱۲",
 		title: "عنوان محصول ۱۲",
 		category: 4,
@@ -179,7 +179,7 @@ export const products: TProductItem[] = [
 	},
 	{
 		id: 13,
-		imgUrl: "https://example.com/image13.jpg",
+		imgUrl: "https://picsum.photos/id/25/200/300",
 		name: "محصول ۱۳",
 		title: "عنوان محصول ۱۳",
 		category: 2,
@@ -193,7 +193,7 @@ export const products: TProductItem[] = [
 	},
 	{
 		id: 14,
-		imgUrl: "https://example.com/image14.jpg",
+		imgUrl: "https://picsum.photos/id/23/200/300",
 		name: "محصول ۱۴",
 		title: "عنوان محصول ۱۴",
 		category: 4,
@@ -207,7 +207,7 @@ export const products: TProductItem[] = [
 	},
 	{
 		id: 15,
-		imgUrl: "https://example.com/image15.jpg",
+		imgUrl: "https://picsum.photos/id/52/200/300",
 		name: "محصول ۱۵",
 		title: "عنوان محصول ۱۵",
 		category: 5,
@@ -221,7 +221,7 @@ export const products: TProductItem[] = [
 	},
 	{
 		id: 16,
-		imgUrl: "https://example.com/image16.jpg",
+		imgUrl: "https://picsum.photos/id/32/200/300",
 		name: "محصول ۱۶",
 		title: "عنوان محصول ۱۶",
 		category: 4,
@@ -235,7 +235,7 @@ export const products: TProductItem[] = [
 	},
 	{
 		id: 17,
-		imgUrl: "https://example.com/image17.jpg",
+		imgUrl: "https://picsum.photos/id/12/200/300",
 		name: "محصول ۱۷",
 		title: "عنوان محصول ۱۷",
 		category: 5,
@@ -249,7 +249,7 @@ export const products: TProductItem[] = [
 	},
 	{
 		id: 18,
-		imgUrl: "https://example.com/image18.jpg",
+		imgUrl: "https://picsum.photos/id/24/200/300",
 		name: "محصول ۱۸",
 		title: "عنوان محصول ۱۸",
 		category: 2,
@@ -263,7 +263,7 @@ export const products: TProductItem[] = [
 	},
 	{
 		id: 19,
-		imgUrl: "https://example.com/image19.jpg",
+		imgUrl: "https://picsum.photos/id/22/200/300",
 		name: "محصول ۱۹",
 		title: "عنوان محصول ۱۹",
 		category: 1,
@@ -277,7 +277,7 @@ export const products: TProductItem[] = [
 	},
 	{
 		id: 20,
-		imgUrl: "https://example.com/image20.jpg",
+		imgUrl: "https://picsum.photos/id/20/200/300",
 		name: "محصول ۲۰",
 		title: "عنوان محصول ۲۰",
 		category: 4,
