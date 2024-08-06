@@ -1,4 +1,5 @@
 import { Slider, ProductList } from "@/components";
+import BottomNavigationBar from "@/components/BottomNavigationBar";
 import { products } from "@/fake";
 
 const Home = () => {
