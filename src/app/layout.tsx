@@ -2,18 +2,12 @@ import type { Metadata } from "next";
 import { AppRouterCacheProvider } from "@mui/material-nextjs/v14-appRouter";
 import "./globals.css";
 
-import {
-	Box,
-	Container,
-	CssBaseline,
-	ThemeProvider,
-	Toolbar,
-} from "@mui/material";
+import { Container, CssBaseline, ThemeProvider } from "@mui/material";
 import theme from "@/theme";
 import Appbar from "@/components/Appbar";
 
 export const metadata: Metadata = {
-	title: "torshin market",
+	title: "Torshin Market",
 	description: "یک سایت برای خرید انواع ترشیجات و لواشک",
 };
 
@@ -29,15 +23,14 @@ export default function RootLayout({
 					<ThemeProvider theme={theme}>
 						<CssBaseline />
 						<Appbar />
-						<Box
+						<Container
+							maxWidth="xl"
 							sx={{
-								mt: 8,
-								height: "100vh",
-								widows: "100vw",
-								bgcolor: "#F7F9F2",
+								px: 0,
+								py: 9,
 							}}>
 							{children}
-						</Box>
+						</Container>
 					</ThemeProvider>
 				</AppRouterCacheProvider>
 			</body>

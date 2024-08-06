@@ -1,10 +1,13 @@
-import { Slider } from "@/components/Landing";
-import { Box } from "@mui/material";
+import { Slider, ProductList } from "@/components";
 
 const Home = () => {
 	return (
 		<>
 			<Slider />
+			<ProductList
+				variant="offer"
+				items={[{}]}
+			/>
 		</>
 	);
 };

@@ -1,36 +1,32 @@
 "use client";
-// Import Swiper React components
+
 import { Swiper, SwiperSlide } from "swiper/react";
 
-// Import Swiper styles
-import "./swiper.css";
-import "./swiper-bundle.css";
+import { CardMedia } from "@mui/material";
+import { Autoplay, Navigation, Pagination } from "swiper/modules";
 
-import { Box, CardMedia } from "@mui/material";
-import { Autoplay, Pagination } from "swiper/modules";
+import "../../styles/swiper.css";
 
 export default () => {
 	return (
 		<Swiper
-			style={{
-				backgroundColor: "#F7F9F2",
-			}}
-			modules={[Pagination, Autoplay]}
+			modules={[Pagination, Autoplay, Navigation]}
 			slidesPerView={1}
-			spaceBetween={100}
+			spaceBetween={10}
 			loop={true}
 			speed={700}
 			autoplay={{
 				delay: 7000,
 			}}
 			pagination={{
+				dynamicBullets: true,
 				clickable: true,
 			}}>
 			<SwiperSlide>
 				<CardMedia
 					sx={{
+						height: { xs: 260, sm: 300, lg: 400 },
 						bgcolor: "#0FF",
-						height: { xs: 170, sm: 300, md: 400 },
 					}}
 				/>
 			</SwiperSlide>
@@ -38,7 +34,7 @@ export default () => {
 				<CardMedia
 					sx={{
 						bgcolor: "#F0F",
-						height: { xs: 170, sm: 300, md: 400 },
+						height: { xs: 260, sm: 300, lg: 400 },
 					}}
 				/>
 			</SwiperSlide>
@@ -46,7 +42,7 @@ export default () => {
 				<CardMedia
 					sx={{
 						bgcolor: "#FF0",
-						height: { xs: 170, sm: 300, md: 400 },
+						height: { xs: 260, sm: 300, lg: 400 },
 					}}
 				/>
 			</SwiperSlide>
