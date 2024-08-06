@@ -113,14 +113,14 @@ const ProductCard = ({ product }: { product: TProductItem }) => {
 									marginRight: 1,
 									opacity: 0.6,
 								}}>
-								{"16000"}
+								{product.price}
 							</Typography>
 							<Box
 								bgcolor="#f00"
 								sx={{
 									px: 1,
 									borderRadius: 4,
-									pt: 0.3,
+									pt: { xs: 0.5, sm: 0.5 },
 									mr: 1,
 								}}>
 								<Typography
@@ -129,7 +129,7 @@ const ProductCard = ({ product }: { product: TProductItem }) => {
 									}}
 									variant="body2"
 									color="#fff">
-									{"20" + "%"}
+									{product.discount + "%"}
 								</Typography>
 							</Box>
 						</Box>
@@ -141,7 +141,7 @@ const ProductCard = ({ product }: { product: TProductItem }) => {
 								gap: 1,
 							}}
 							variant="body1">
-							{"16000"}
+							{product.finalPrice}
 							<svg
 								width="16"
 								height="16"
