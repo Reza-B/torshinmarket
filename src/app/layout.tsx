@@ -1,16 +1,13 @@
 import type { Metadata } from "next";
-import { Vazirmatn } from "next/font/google";
 import { AppRouterCacheProvider } from "@mui/material-nextjs/v14-appRouter";
-import { ThemeProvider } from "@mui/material/styles";
-import theme from "../theme";
-
 import "./globals.css";
-import { CssBaseline } from "@mui/material";
 
-const vazir = Vazirmatn({ subsets: ["arabic"] });
+import { Container, CssBaseline, ThemeProvider } from "@mui/material";
+import theme from "@/theme";
+import Appbar from "@/components/Appbar";
 
 export const metadata: Metadata = {
-	title: "torshin market",
+	title: "Torshin Market",
 	description: "یک سایت برای خرید انواع ترشیجات و لواشک",
 };
 
@@ -20,12 +17,20 @@ export default function RootLayout({
 	children: React.ReactNode;
 }>) {
 	return (
-		<html lang="fa">
-			<body className={vazir.className}>
-				<AppRouterCacheProvider options={{ key: "css" }}>
+		<html lang="fa-IR">
+			<body>
+				<AppRouterCacheProvider>
 					<ThemeProvider theme={theme}>
 						<CssBaseline />
-						{children}
+						<Appbar />
+						<Container
+							maxWidth="xl"
+							sx={{
+								px: 0,
+								py: 9,
+							}}>
+							{children}
+						</Container>
 					</ThemeProvider>
 				</AppRouterCacheProvider>
 			</body>
