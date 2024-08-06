@@ -21,11 +21,12 @@ const Appbar = () => {
 					sx={{
 						display: "flex",
 						p: 0,
-						gap: 2,
+						gap: { xs: 1, sm: 2 },
 						alignItems: "center",
 					}}>
 					<IconButton
 						sx={{
+							display: { xs: "none", sm: "block" },
 							bgcolor: "#129F85",
 							width: "40px",
 							height: "40px",
@@ -68,6 +69,7 @@ const Appbar = () => {
 					</IconButton>
 					<Button
 						sx={{
+							display: { xs: "none", sm: "block" },
 							px: 1,
 							width: "160px",
 							height: "40px",
@@ -109,12 +111,15 @@ const Appbar = () => {
 					/>
 					<Box
 						display="flex"
-						height="40px">
+						sx={{
+							height: { xs: "26px", sm: "40px" },
+						}}>
 						<Typography
 							noWrap
 							fontWeight="bold"
 							variant="h4"
 							sx={{
+								fontSize: { xs: "24px", sm: "34px" },
 								color: "#129F85",
 							}}>
 							{"Torsin"}
@@ -124,6 +129,7 @@ const Appbar = () => {
 							fontWeight="bold"
 							variant="h4"
 							sx={{
+								fontSize: { xs: "24px", sm: "34px" },
 								color: "#000",
 							}}>
 							{"Market"}
