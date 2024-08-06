@@ -1,10 +1,16 @@
+export type TColor = {
+	id: number;
+	name: string;
+	hashcode: string;
+};
+
 //? Product
 export type TProduct = {
 	id: number;
 	imgUrl: string[];
 	name: string;
 	title: string;
-	category: string;
+	category: TCategory;
 	description: string;
 	price: number;
 	color: string;
@@ -17,10 +23,13 @@ export type TProductItem = {
 	imgUrl: string;
 	name: string;
 	title: string;
-	category: string;
+	category: number;
 	price: number;
-	color: string;
-	colors: string[];
+	discount: number;
+	finalPrice: number;
+	suggestion: boolean;
+	color: TColor;
+	colors: TColor[];
 	created: Date;
 };
 
