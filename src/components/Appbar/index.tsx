@@ -114,7 +114,6 @@ const Appbar = () => {
 										fill="#9C9C9C"
 									/>
 								</svg>
-								{/* <Typography color="#9C9C9C">{"جستجو"}</Typography> */}
 							</IconButton>
 						</Box>
 						<InputBase
