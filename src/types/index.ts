@@ -20,6 +20,7 @@ export type TProduct = {
 
 export type TProductItem = {
 	id: number;
+	slug: string;
 	imgUrl: string;
 	name: string;
 	title: string;

@@ -1,10 +1,13 @@
 import { TProductItem } from "@/types";
 import { Box, CardMedia, IconButton, Typography } from "@mui/material";
+import Link from "next/link";
 import React from "react";
 
 const ProductCard = ({ product }: { product: TProductItem }) => {
 	return (
-		<>
+		<Link
+			href={`/products/${product.slug}`}
+			passHref>
 			<Box
 				bgcolor="#fff"
 				sx={{
@@ -60,6 +63,11 @@ const ProductCard = ({ product }: { product: TProductItem }) => {
 						borderRadius: "10px",
 					}}>
 					<IconButton
+						onClick={(event) => {
+							event.stopPropagation();
+							event.preventDefault();
+							console.log(1);
+						}}
 						sx={{
 							bgcolor: "#00CDC0",
 							width: { xs: "35px", sm: "50px" },
@@ -101,7 +109,7 @@ const ProductCard = ({ product }: { product: TProductItem }) => {
 						justifyContent="center"
 						alignItems="center"
 						sx={{
-							pt: { xs: 0.5, sm: 2 },
+							pt: { xs: 0.5, sm: 1 },
 						}}
 						pt={2}>
 						<Box display="flex">
@@ -156,7 +164,7 @@ const ProductCard = ({ product }: { product: TProductItem }) => {
 					</Box>
 				</Box>
 			</Box>
-		</>
+		</Link>
 	);
 };
 

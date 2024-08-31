@@ -27,7 +27,7 @@ export default function RootLayout({
 							maxWidth="xl"
 							sx={{
 								px: 0,
-								py: 9,
+								pt: 9,
 							}}>
 							{children}
 						</Container>

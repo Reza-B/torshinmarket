@@ -140,6 +140,7 @@ const Appbar = () => {
 								borderRadius: "10px",
 								height: "40px",
 								px: { xs: 1, md: 2.5 },
+								maxWidth: 800,
 								py: 0.5,
 								my: 1,
 								fontSize: { xs: "14px", md: "16px" },
