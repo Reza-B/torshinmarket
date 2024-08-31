@@ -26,14 +26,14 @@ export default () => {
 				<CardMedia
 					sx={{
 						height: { xs: 260, sm: 300, lg: 400 },
-						bgcolor: "#0FF",
+						bgcolor: "#0AA0A0",
 					}}
 				/>
 			</SwiperSlide>
 			<SwiperSlide>
 				<CardMedia
 					sx={{
-						bgcolor: "#F0F",
+						bgcolor: "#A000A0",
 						height: { xs: 260, sm: 300, lg: 400 },
 					}}
 				/>
@@ -41,7 +41,7 @@ export default () => {
 			<SwiperSlide>
 				<CardMedia
 					sx={{
-						bgcolor: "#FF0",
+						bgcolor: "#A0A000",
 						height: { xs: 260, sm: 300, lg: 400 },
 					}}
 				/>

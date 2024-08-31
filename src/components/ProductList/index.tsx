@@ -20,7 +20,7 @@ export default ({
 	return (
 		<Box
 			sx={{
-				bgcolor: `${variant === "special" ? "#91DDCF" : "#F19ED2"}`,
+				bgcolor: `${variant === "special" ? "#28b59b" : "#eeb2bd"}`,
 				direction: "rtl",
 				borderRadius: { xs: "0 15px 15px 0", sm: 4 },
 				mt: 2,
