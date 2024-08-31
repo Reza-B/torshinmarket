@@ -1,4 +1,3 @@
-import { MyTab } from "@/components/MyTabs";
 import ProductImages from "@/components/ProductImages";
 import ProductSpecification from "@/components/ProductSpecification";
 import {
