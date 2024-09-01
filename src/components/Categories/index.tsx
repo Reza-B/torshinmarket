@@ -1,30 +1,21 @@
-import { Box, Button, CardMedia, Container, Typography } from "@mui/material";
+import {
+	Box,
+	Button,
+	CardMedia,
+	Container,
+	Grid,
+	Typography,
+} from "@mui/material";
 import React from "react";
 
 const Categories = () => {
 	return (
-		<Box
-			my={6}
-			mx={12}>
-			{/* <Box
-				sx={{
-					direction: "rtl",
-					display: "flex",
-					justifyContent: "space-between",
-				}}>
-				<Typography
-					variant="h5"
-					fontWeight="bold">
-					دسته بندی ها
-				</Typography>
-				<Button>
-					<Typography color="#9B9B9B">{"تمام دسته بندی ها"} </Typography>
-				</Button>
-			</Box> */}
-			<Box
-				mt={5}
+		<Box>
+			<Grid
+				container
+				my={6}
 				gap={2}
-				justifyContent="center"
+				justifyContent="space-around"
 				display="flex">
 				<Box
 					height={100}
@@ -134,7 +125,7 @@ const Categories = () => {
 						image="https://placehold.co/800@2x.png"></CardMedia>
 					<Typography>{"دسته بندی 1"}</Typography>
 				</Box>
-			</Box>
+			</Grid>
 		</Box>
 	);
 };

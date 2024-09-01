@@ -1,13 +1,13 @@
 import {
 	AppBar,
 	Box,
-	Button,
 	Container,
 	IconButton,
 	InputBase,
 	Toolbar,
 	Typography,
 } from "@mui/material";
+import LoginButton from "./LoginButton";
 
 const Appbar = () => {
 	return (
@@ -73,21 +73,7 @@ const Appbar = () => {
 									/>
 								</svg>
 							</IconButton>
-							<Button
-								sx={{
-									px: 1,
-									width: "120px",
-									height: { xs: "36px", sm: "40px" },
-									borderRadius: "10px",
-									bgcolor: "#EAEAEA",
-								}}>
-								<Typography
-									variant="body1"
-									color="#000"
-									noWrap>
-									{"ورود | ثبت نام"}
-								</Typography>
-							</Button>
+							<LoginButton />
 							<IconButton
 								sx={{
 									display: { xs: "flex", sm: "none" },
@@ -157,7 +143,7 @@ const Appbar = () => {
 								fontWeight="bold"
 								variant="h4"
 								sx={{
-									fontSize: { xs: "24px", sm: "34px" },
+									fontSize: { xs: "21px", sm: "34px" },
 									color: "#129F85",
 								}}>
 								{"Torsin"}
@@ -167,7 +153,7 @@ const Appbar = () => {
 								fontWeight="bold"
 								variant="h4"
 								sx={{
-									fontSize: { xs: "24px", sm: "34px" },
+									fontSize: { xs: "21px", sm: "34px" },
 									color: "#000",
 								}}>
 								{"Market"}
