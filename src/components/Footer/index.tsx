@@ -1,4 +1,5 @@
 import { Box, Button, Grid, Typography } from "@mui/material";
+import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
@@ -116,7 +117,7 @@ const Footer = () => {
 					</Box>
 				</Grid>
 				<Grid
-					md={6}
+					md={3}
 					item>
 					<Typography
 						color="#FFF"
@@ -137,11 +138,35 @@ const Footer = () => {
 							</Typography>
 						</Link>
 					</Box>
+				</Grid>
+				<Grid
+					md={3}
+					item>
 					<Typography
 						color="#FFF"
 						fontWeight="bold">
 						{"مجوز ها"}
 					</Typography>
+					<Box
+						my={1}
+						mr={2}
+						width={100}
+						height={100}
+						bgcolor="white"
+						sx={{
+							display: "flex",
+							justifyContent: "center",
+							alignItems: "center",
+							overflow: "hidden",
+							borderRadius: "20px",
+						}}>
+						<Image
+							height={80}
+							width={80}
+							alt="enamad"
+							src="/assets/enamad.jpg"
+						/>
+					</Box>
 				</Grid>
 			</Grid>
 			<Box
