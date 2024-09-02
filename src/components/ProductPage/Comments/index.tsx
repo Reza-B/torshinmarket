@@ -1,6 +1,7 @@
-import { Box, Button, Grid, Paper, Typography } from "@mui/material";
+import { Box, Grid, Paper, Typography } from "@mui/material";
 import React from "react";
 import Comment from "./Comment";
+import AddCommentButton from "./AddCommentButton";
 
 const Comments = () => {
 	return (
@@ -30,37 +31,7 @@ const Comments = () => {
 							}}
 						/>
 					</Box>
-					<Button
-						variant="contained"
-						sx={{
-							bgcolor: "#00CDC0",
-							gap: 1,
-							height: 30,
-							mb: 1,
-							borderRadius: "10px",
-						}}>
-						<svg
-							width="24"
-							height="24"
-							viewBox="0 0 24 24"
-							fill="none"
-							xmlns="http://www.w3.org/2000/svg">
-							<path
-								d="M12 6L12 18"
-								stroke="#fff"
-								stroke-width="2"
-								stroke-linecap="round"
-							/>
-							<path
-								d="M18 12L6 12"
-								stroke="#fff"
-								stroke-width="2"
-								stroke-linecap="round"
-							/>
-						</svg>
-
-						<Typography noWrap>{"افزودن نظر"}</Typography>
-					</Button>
+					<AddCommentButton />
 				</Box>
 				<Comment />
 				<Comment />
