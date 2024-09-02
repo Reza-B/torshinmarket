@@ -44,7 +44,9 @@ const AddCommentButton = () => {
 			<AddCommentModal
 				open={open}
 				handleClose={() => setOpen(false)}
-				handleAdd={() => {}}
+				handleAdd={(value: object) => {
+					console.log(value);
+				}}
 			/>
 		</>
 	);
