@@ -1,93 +1,63 @@
 "use client";
 
-import { EffectCards, Pagination } from "swiper/modules";
+import { EffectCreative, Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
+import { CardMedia } from "@mui/material";
 
-import "../../styles/swiper.css";
-import { Avatar } from "@mui/material";
+import "@/styles/swiper.css";
 
 export default () => {
 	return (
-		<div
-			style={{
-				overflow: "hidden",
-				width: "350px",
-				height: "320px",
-				marginLeft: "auto",
-				marginRight: "auto",
-			}}>
+		<>
 			<Swiper
 				style={{
-					width: "300px",
-					height: "300px",
+					borderRadius: 16,
+					width: "100%",
 				}}
-				effect={"cards"}
-				grabCursor={true}
-				loop={true}
 				pagination={{
-					type: "fraction",
+					dynamicBullets: true,
 				}}
-				cardsEffect={{
-					rotate: false,
-					slideShadows: false,
-					perSlideOffset: 10,
+				grabCursor={true}
+				effect={"creative"}
+				creativeEffect={{
+					prev: {
+						shadow: true,
+						translate: [0, 0, -400],
+					},
+					next: {
+						translate: ["100%", 0, 0],
+					},
 				}}
-				modules={[EffectCards, Pagination]}>
-				<SwiperSlide
-					style={{
-						display: "flex",
-						alignItems: "center",
-						justifyContent: "center",
-						borderRadius: "18px",
-						border: "2px solid #129F85",
-					}}>
-					<Avatar
-						variant="rounded"
-						alt="image"
+				modules={[EffectCreative, Pagination]}
+				className="mySwiper">
+				<SwiperSlide>
+					<CardMedia
 						sx={{
-							width: "300px",
-							height: "300px",
+							width: "100%",
+							aspectRatio: "1",
 						}}
-						src="https://picsum.photos/id/1/200/300"
+						image="https://placehold.co/400x400"
 					/>
 				</SwiperSlide>
-				<SwiperSlide
-					style={{
-						display: "flex",
-						alignItems: "center",
-						justifyContent: "center",
-						borderRadius: "18px",
-						border: "2px solid #129F85",
-					}}>
-					<Avatar
-						variant="rounded"
-						alt="image"
+				<SwiperSlide>
+					<CardMedia
 						sx={{
-							width: "300px",
-							height: "300px",
+							width: "100%",
+							aspectRatio: "1",
 						}}
-						src="https://picsum.photos/id/1/200/300"
+						image="https://placehold.co/400x400"
 					/>
 				</SwiperSlide>
-				<SwiperSlide
-					style={{
-						display: "flex",
-						alignItems: "center",
-						justifyContent: "center",
-						borderRadius: "18px",
-						border: "2px solid #129F85",
-					}}>
-					<Avatar
-						variant="rounded"
-						alt="image"
+				<SwiperSlide>
+					<CardMedia
 						sx={{
-							width: "300px",
-							height: "300px",
+							width: "100%",
+							aspectRatio: "1",
 						}}
-						src="https://picsum.photos/id/1/200/300"
+						image="https://placehold.co/400x400"
 					/>
 				</SwiperSlide>
 			</Swiper>
-		</div>
+		</>
 	);
 };

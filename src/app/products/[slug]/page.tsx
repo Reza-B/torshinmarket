@@ -34,7 +34,11 @@ export default () => {
 						px: 1,
 						py: { xs: 0, sm: 4 },
 					}}>
-					<Grid md={12}>
+					<Grid
+						md={12}
+						sx={{
+							pb: { xs: 0, sm: 2 },
+						}}>
 						<Box
 							display="flex"
 							justifyContent="start">
@@ -57,8 +61,8 @@ export default () => {
 						xs={12}
 						sm={12}
 						md={4.5}
-						lg={4}
-						xl={4}
+						lg={4.5}
+						xl={4.2}
 						sx={{
 							direction: "ltr",
 						}}>
@@ -122,7 +126,13 @@ export default () => {
 											</clipPath>
 										</defs>
 									</svg>
-									<Typography noWrap>{"افزودن به سبد خرید"}</Typography>
+									<Typography
+										sx={{
+											fontSize: { xs: 12, sm: 16 },
+										}}
+										noWrap>
+										{"افزودن به سبد خرید"}
+									</Typography>
 								</Button>
 								<Box
 									display="flex"
