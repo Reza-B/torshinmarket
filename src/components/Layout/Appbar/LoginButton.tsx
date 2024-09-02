@@ -2,7 +2,7 @@
 
 import { Button, Typography } from "@mui/material";
 import React, { useState } from "react";
-import LoginModal from "../LoginModal";
+import LoginModal from "../../LoginModal";
 
 const LoginButton = () => {
 	const [open, setOpen] = useState(false);

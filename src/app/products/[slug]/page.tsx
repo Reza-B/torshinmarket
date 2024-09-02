@@ -1,13 +1,6 @@
-import {
-	Box,
-	Container,
-	Grid,
-	Paper,
-	TextField,
-	Typography,
-} from "@mui/material";
+import { Container, Grid } from "@mui/material";
 
-import Footer from "@/components/Footer";
+import { Footer } from "@/components/Layout";
 import {
 	ProductBreadcrumbs,
 	Comments,

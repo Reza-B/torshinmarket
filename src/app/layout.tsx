@@ -4,7 +4,7 @@ import "./globals.css";
 
 import { Container, CssBaseline, ThemeProvider } from "@mui/material";
 import theme from "@/theme";
-import Appbar from "@/components/Appbar";
+import { Appbar } from "@/components/Layout";
 
 export const metadata: Metadata = {
 	title: "Torshin Market",
