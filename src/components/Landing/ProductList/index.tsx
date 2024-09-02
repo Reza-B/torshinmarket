@@ -6,7 +6,7 @@ import { Scrollbar } from "swiper/modules";
 import { Box } from "@mui/material";
 import SOHeder from "./SOHeder";
 
-import "../../styles/swiper.css";
+import "@/styles/swiper.css";
 import ProductCard from "@/components/ProductCard";
 import { TProductItem, TProductList } from "@/types";
 
