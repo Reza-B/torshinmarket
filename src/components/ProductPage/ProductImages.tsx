@@ -2,13 +2,22 @@
 
 import { EffectCreative, Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { CardMedia } from "@mui/material";
+import { CardMedia, Grid } from "@mui/material";
 
 import "@/styles/swiper.css";
 
-export default () => {
+const ProductImages = () => {
 	return (
-		<>
+		<Grid
+			item
+			xs={12}
+			sm={12}
+			md={4.5}
+			lg={4.5}
+			xl={4.2}
+			sx={{
+				direction: "ltr",
+			}}>
 			<Swiper
 				style={{
 					borderRadius: 16,
@@ -58,6 +67,8 @@ export default () => {
 					/>
 				</SwiperSlide>
 			</Swiper>
-		</>
+		</Grid>
 	);
 };
+
+export default ProductImages;
