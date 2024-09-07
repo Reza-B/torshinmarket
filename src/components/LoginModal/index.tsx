@@ -1,19 +1,17 @@
 "use client";
+
 import {
 	Box,
 	Button,
 	Dialog,
-	DialogActions,
-	DialogTitle,
 	FormControl,
 	IconButton,
 	InputAdornment,
-	InputLabel,
 	Typography,
+	InputBase,
 } from "@mui/material";
 
 import styled from "@emotion/styled";
-import { InputBase } from "@mui/material";
 import React, { useState } from "react";
 import CodeInput from "./CodeInput";
 
