@@ -13,6 +13,7 @@ import { useState } from "react";
 import SearchBarModal from "./SearchBarModal";
 import { TCategory } from "@/types";
 import SearchBar from "./SearchBar";
+import Cart from "@/components/Cart";
 
 const Appbar = () => {
 	const [searchOpen, setSearchOpen] = useState(false);
@@ -32,6 +33,9 @@ const Appbar = () => {
 	const toggleMobileSearch = () => {
 		setMobileSearchOpen(!mobileSearchOpen);
 	};
+
+	//Cart
+	const [cartOpen, setCartOpen] = useState(false);
 
 	return (
 		<>
@@ -54,7 +58,9 @@ const Appbar = () => {
 							justifyContent: "space-between",
 						}}>
 						<Box sx={{ display: "flex", gap: { xs: 1, sm: 2 } }}>
+							{/* Open Cart button */}
 							<IconButton
+								onClick={() => setCartOpen(true)}
 								sx={{
 									bgcolor: "#129F85",
 									width: { xs: "36px", sm: "40px" },
@@ -96,8 +102,9 @@ const Appbar = () => {
 									/>
 								</svg>
 							</IconButton>
+							{/* Login Button */}
 							<LoginButton />
-							{/* mobile search button */}
+							{/* Mobile Search Button */}
 							<IconButton
 								onClick={toggleMobileSearch}
 								sx={{
@@ -127,7 +134,7 @@ const Appbar = () => {
 								</svg>
 							</IconButton>
 						</Box>
-						{/* search input */}
+						{/* Search input */}
 						<SearchBar
 							handleSearchClick={handleSearchClick}
 							handleSearchBlur={handleSearchBlur}
@@ -168,6 +175,10 @@ const Appbar = () => {
 				searchOpen={mobileSearchOpen}
 				handleCloseSearch={() => setMobileSearchOpen(false)}
 				searchResults={searchResults}
+			/>
+			<Cart
+				open={cartOpen}
+				handleClose={() => setCartOpen(false)}
 			/>
 		</>
 	);
